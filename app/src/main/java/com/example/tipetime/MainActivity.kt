@@ -150,7 +150,7 @@ fun EditNumberField(
         label = { Text(stringResource(label)) },
         keyboardOptions = keyboardOptions,
         singleLine = true,
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
     )
 }
@@ -166,9 +166,7 @@ fun RoundTheTipRow(
             .fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        Text(
-            text = stringResource(R.string.round_up_tip)
-        )
+        Text(text = stringResource(R.string.round_up_tip))
 
         Switch(
             modifier = modifier
